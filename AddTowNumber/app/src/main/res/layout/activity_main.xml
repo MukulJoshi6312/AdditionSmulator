@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:text="Add Two Numbers"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="16dp"
+            android:text="Code Visualization"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:padding="4dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+
+            <TextView
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="import java.util.*;"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+
+             <TextView
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="class Main"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="{"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="public static void main (String[] args)"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/line5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="{"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/line6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scanner sc = new Scanner(System.in);"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+
+
+            <TextView
+                android:id="@+id/line7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/line7"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+        <TextView
+                android:id="@+id/line8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="int num1 = sc.nextInt();"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/line9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/line9"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+<TextView
+                android:id="@+id/line10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="int num2 = sc.nextInt();"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+
+
+            <TextView
+                android:id="@+id/line11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="int sum = 0;"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+<TextView
+                android:id="@+id/line12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sum = num1+num2;"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+           <TextView
+                android:id="@+id/line13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/line13"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+ <TextView
+                android:id="@+id/line14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="}"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+ <TextView
+                android:id="@+id/line15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="}"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/reset_btn"
+            android:text="Reset"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/nextBnt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/next_btn"
+            android:text="Next"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:background="@color/start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/pImport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/util"
+            android:textColor="@color/start"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/className"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/classStr"
+            android:textColor="@color/start"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/openBrackets"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/openBrackets"
+            android:textColor="@color/start"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/mainMethod"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/mainMethod"
+            android:textColor="@color/start"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+        <ImageView
+            android:id="@+id/mainImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/jvm"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/mainMethod" />
+
+
+        <TextView
+            android:id="@+id/openMainMethod"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/openMainMethod"
+            android:textColor="@color/start"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+        <TextView
+            android:id="@+id/ScannerObj"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/start"
+            android:layout_margin="16dp"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:text="@string/scannerStr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/mainMethod" />
+
+
+        <TextView
+            android:id="@+id/firstNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/start"
+            android:layout_margin="16dp"
+            android:text="@string/first_number"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/mainMethod" />
+
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:hint="num1"
+            android:padding="16sp"
+            android:textColor="@color/start"
+            android:background="@drawable/input"
+            android:inputType="number"
+            android:visibility="gone"
+            android:textColorHint="#5C5959"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/mainMethod" />
+
+        <TextView
+            android:id="@+id/secondNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/start"
+            android:layout_margin="16dp"
+            android:text="@string/second_number"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/mainMethod" />
+
+        <EditText
+            android:id="@+id/input2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:hint="num2"
+            android:padding="16sp"
+            android:textColor="@color/start"
+            android:background="@drawable/input"
+            android:inputType="number"
+            android:visibility="gone"
+            android:textColorHint="#5C5959"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/mainMethod" />
+
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="0dp"
+            android:layout_margin="16dp"
+            android:text="@string/sum"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/start"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/mainMethod" />
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="56dp"
+            android:fontFamily="sans-serif"
+            android:text="num1"
+            android:textColor="@color/start"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/mainMethod" />
+
+        <TextView
+            android:id="@+id/showNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="10"
+            android:textColor="@color/start"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:fontFamily="sans-serif"
+            android:text="num2"
+            android:textColor="@color/start"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/showNum1"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/textView5"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/showNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="10"
+            android:visibility="gone"
+
+            android:textColor="@color/start"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:padding="10dp"
+            android:textColor="@color/start"
+            android:textSize="24sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/showNum1"
+            app:layout_constraintEnd_toStartOf="@+id/showNum2"
+            app:layout_constraintStart_toEndOf="@+id/showNum1"
+            app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/sumOfNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16sp"
+            android:visibility="gone"
+            android:text="Sum  = "
+            android:textColor="@color/start"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/showNum1"
+            app:layout_constraintEnd_toStartOf="@+id/showNum1"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+
+        <TextView
+            android:id="@+id/Addition"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp"
+            android:fontFamily="sans-serif"
+            android:text="SUM: "
+            android:layout_margin="16sp"
+            android:textColor="@color/start"
+            android:textSize="24sp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/mainMethod" />
+
+
+        <TextView
+            android:id="@+id/close_method"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/close_brackets_method"
+            android:textColor="@color/start"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+        <TextView
+            android:id="@+id/close_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/close_brackets_class"
+            android:textColor="@color/start"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">AddTowNumber</string>
+
+    <string name="code">
+import java.util.*;\n
+        class Main\n
+        {\n
+	public static void main (String[] args)
+        \n{\n
+
+    Scanner sc = new Scanner(System.in);\n
+    System.out.println(\"Enter The First Number:\");\n
+    int num1 = sc.nextInt();\n
+    System.out.println(\"Enter The Second Number:\");\n
+    int num2 = sc.nextInt();\n
+    int sum = 0;\n
+    sum = num1+num2;\n
+    System.out.println(\"SUM : \"+sum);\n
+
+	}\n
+}
+    </string>
+    <string name="line7">System.out.println(\"Enter The First Number:\");</string>
+    <string name="line9">System.out.println(\"Enter The Second Number:\");</string>
+    <string name="line13">System.out.println(\"SUM : \"+sum);</string>
+
+    <string name="util">import java.util.*;\n\n
+It contains the collections framework, legacy collection classes, event model, date and time facilities, internationalization, and miscellaneous utility classes (a string tokenizer, a random-number generator, and a bit array).</string>
+
+    <string name="classStr">class Main\n\n
+        Main is the name of java class\n\nA class is a user defined blueprint or prototype from which objects are created. It represents the set of properties or methods that are common to all objects of one type.</string>
+
+
+    <string name="openBrackets">{\n\n
+    Open brackets of the class.</string>
+
+    <string name="mainMethod">public static void main (String[] args)\n\nThe main() is the starting point for JVM to start execution of a Java program. Without the main() method, JVM will not execute the program. The syntax of the main() method is:
+
+</string>
+
+    <string name="openMainMethod">{\n\nOpen brackets of the main method.</string>
+
+    <string name="scannerStr">    Scanner sc = new Scanner(System.in);\n\n
+Scanner class in Java is found in the java.util package. Java provides various ways to read input from the keyboard, the java.util.Scanner class is one of them.
+    \n
+    The Java Scanner class provides nextXXX() methods to return the type of value such as nextInt(), nextByte(), nextShort(), next(), nextLine(), nextDouble(), nextFloat(), nextBoolean(), etc. To get a single character from the scanner, you can call next().charAt(0) method which returns a single character.</string>
+
+
+    <string name="first_number">Enter The First Number:</string>
+    <string name="second_number">Enter The Second Number:</string>
+    <string name="sum">declare sum variable to store the result of num1 + num2</string>
+
+
+    <string name="close_brackets_method">}\n\nClose brackets of the method</string>
+    <string name="close_brackets_class">}\n\nClose brackets of the class</string>
+
+</resources>
